@@ -526,11 +526,11 @@ document.addEventListener("DOMContentLoaded", function () {
                  *
                  * Contoh:
                  *
-                 * 081234567890
+                 * 6285954755503
                  *
                  * menjadi:
                  *
-                 * 6281234567890
+                 * 6285954755503
                  *
                  * Jangan menggunakan:
                  * +
@@ -539,7 +539,7 @@ document.addEventListener("DOMContentLoaded", function () {
                  */
 
                 const nomorPerusahaan =
-                    "6281234567890";
+                    "6285954755503";
 
 
                 const message =
@@ -611,7 +611,7 @@ Terima kasih.`;
                      */
 
                     const nomorWhatsApp =
-                        "6281234567890";
+                        "6285954755503";
 
 
                     const pesanWhatsApp =
