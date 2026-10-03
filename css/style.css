@@ -7795,3 +7795,404 @@ p {
 
 }
 
+/* =====================================================
+   PERJALANAN PERUSAHAAN
+===================================================== */
+
+.company-journey {
+    position: relative;
+    padding: 110px 0;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(213, 160, 59, 0.08),
+            transparent 30%
+        ),
+        #f7f8f9;
+}
+
+.journey-heading {
+    max-width: 760px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.journey-heading h2 {
+    margin: 12px 0 18px;
+    color: #0d2940;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.journey-heading h2 span {
+    color: #d5a03b;
+}
+
+.journey-heading p {
+    color: #687580;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* ===============================
+   TIMELINE
+================================ */
+
+.journey-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* GARIS TENGAH */
+
+.journey-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 170px;
+    left: 50%;
+    width: 2px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        to bottom,
+        #d5a03b,
+        rgba(213, 160, 59, 0.18)
+    );
+}
+
+.journey-item {
+    position: relative;
+    display: flex;
+    width: 50%;
+    padding: 0 55px 65px 0;
+}
+
+.journey-item.journey-right {
+    margin-left: 50%;
+    padding: 0 0 65px 55px;
+}
+
+
+/* ===============================
+   NOMOR TENGAH
+================================ */
+
+.journey-marker {
+    position: absolute;
+    top: 28px;
+    right: -25px;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    border: 5px solid #f7f8f9;
+    border-radius: 50%;
+
+    background: #0d2940;
+    box-shadow: 0 8px 25px rgba(13, 41, 64, 0.18);
+}
+
+.journey-right .journey-marker {
+    right: auto;
+    left: -25px;
+}
+
+.journey-marker span {
+    color: #f1c86b;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+/* ===============================
+   CARD
+================================ */
+
+.journey-card {
+    position: relative;
+    width: 100%;
+    padding: 32px;
+
+    overflow: hidden;
+
+    border: 1px solid #e3e7ea;
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    box-shadow: 0 15px 45px rgba(7, 27, 43, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.journey-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(7, 27, 43, 0.13);
+}
+
+/* GARIS EMAS CARD */
+
+.journey-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 75px;
+    height: 4px;
+
+    background: #d5a03b;
+}
+
+.journey-year {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    color: #d5a03b;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.journey-card h3 {
+    position: relative;
+    z-index: 2;
+
+    margin: 0 0 12px;
+
+    color: #0d2940;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.journey-card p {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+    max-width: 330px;
+
+    color: #687580;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* ICON BACKGROUND */
+
+.journey-icon {
+    position: absolute;
+    right: 22px;
+    bottom: 12px;
+
+    color: rgba(13, 41, 64, 0.055);
+
+    font-size: 75px;
+}
+
+
+/* ===============================
+   MASA DEPAN
+================================ */
+
+.journey-future {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    max-width: 720px;
+    margin: 15px auto 0;
+
+    padding: 30px 35px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071b2b,
+            #173e59
+        );
+
+    box-shadow: 0 20px 50px rgba(7, 27, 43, 0.18);
+}
+
+.journey-future-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 65px;
+    height: 65px;
+
+    border-radius: 12px;
+
+    background: rgba(213, 160, 59, 0.14);
+
+    color: #f1c86b;
+
+    font-size: 25px;
+}
+
+.journey-future span {
+    color: #f1c86b;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.journey-future h3 {
+    margin: 5px 0 8px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+}
+
+.journey-future p {
+    margin: 0;
+
+    color: #dbe3e8;
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   TABLET / HP
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .company-journey {
+        padding: 75px 0;
+    }
+
+    .journey-heading {
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
+    .journey-heading h2 {
+        font-size: 32px;
+    }
+
+    /* PINDAHKAN GARIS KE KIRI */
+
+    .journey-timeline::before {
+        left: 22px;
+        transform: none;
+        bottom: 190px;
+    }
+
+    .journey-item,
+    .journey-item.journey-right {
+        width: 100%;
+
+        margin-left: 0;
+
+        padding:
+            0
+            0
+            35px
+            65px;
+    }
+
+    /* NOMOR */
+
+    .journey-marker,
+    .journey-right .journey-marker {
+        top: 22px;
+        left: 0;
+        right: auto;
+
+        width: 44px;
+        height: 44px;
+
+        border-width: 4px;
+    }
+
+    /* CARD */
+
+    .journey-card {
+        padding: 26px 23px;
+    }
+
+    .journey-card h3 {
+        font-size: 18px;
+    }
+
+    .journey-card p {
+        max-width: none;
+        font-size: 12px;
+    }
+
+    .journey-icon {
+        right: 15px;
+        bottom: 10px;
+        font-size: 60px;
+    }
+
+    /* FUTURE */
+
+    .journey-future {
+        align-items: flex-start;
+
+        gap: 16px;
+
+        margin-left: 0;
+        padding: 25px 20px;
+    }
+
+    .journey-future-icon {
+        min-width: 50px;
+        height: 50px;
+
+        font-size: 20px;
+    }
+
+    .journey-future h3 {
+        font-size: 17px;
+    }
+
+}
+
+/* =========================================
+   ANCHOR SCROLL TENTANG KAMI
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+#kata-pengantar,
+#latar-belakang,
+#company-profile,
+#perjalanan,
+#visi-misi,
+#struktur,
+#kegiatan-usaha {
+    scroll-margin-top: 140px;
+}
